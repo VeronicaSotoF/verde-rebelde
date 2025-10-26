@@ -1,7 +1,7 @@
 .banner {
-  height: 400px;
+  height: 450px;
 
-  background-color: rgb(139, 139, 74);
+  background-color: rgb(255, 255, 255);
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -32,5 +32,26 @@
   width: 100%;
 }
 
-.texts {
+.image {
+  object-fit: cover;
+}
+
+.texts h1 {
+  color: rgb(38, 132, 42);
+  letter-spacing: 8px;
+}
+
+.texts p {
+  color: black;
+}
+
+.info-banner {
+  height: 500px;
+
+  background: linear-gradient(to bottom, #61a867, #f7f5f5);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1;
 }
