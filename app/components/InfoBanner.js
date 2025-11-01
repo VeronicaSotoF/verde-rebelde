@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Card from "./Card";
 
 const InfoBanner = () => {
   return (
@@ -7,35 +8,36 @@ const InfoBanner = () => {
         <Image
           className="image salad-and-coffee"
           src="/salad_and_coffee.png"
-          alt="Next.js logo"
+          alt="Ensalada y café"
           width={500}
           height={400}
           priority
         />
       </div>
+
       <div className="right">
-        <div className="texts">
-          <h1>Porqué la gente nos elige?</h1>
-          <div>
-            <h1>Ingredientes 100% naturales</h1>
-            <p>
-              Usamos solo ingredientes frescos, orgánicos y de origen local para
-              ofrecerte alimentos que nutren tu cuerpo y cuidan el planeta.
-            </p>
-          </div>
-          <div>
-            <h1>Compromiso con tu bienestar</h1>
-            <p>
-              Preparamos cada producto para aportar energía, salud y equilibrio,
-              ayudándote a mantener un estilo de vida más consciente y vital.
-            </p>
-          </div>
-          <div>
-            <h1>Sabor y nutrición sin compromisos</h1>
-            <p>
-              Combinamos lo mejor de la naturaleza con recetas deliciosas,
-              logrando alimentos saludables que realmente disfrutas cada día.
-            </p>
+        <div className="info-content">
+          <h1 className="info-title">¿Por qué la gente nos elige?</h1>
+
+          <div className="cards-container">
+            <Card
+              title="Ingredientes 100% naturales"
+              text="Usamos solo ingredientes frescos, orgánicos y de origen local para ofrecerte alimentos que nutren tu cuerpo y cuidan el planeta."
+              type="type1"
+              icon="/icon1.png"
+            />
+            <Card
+              title="Compromiso con tu bienestar"
+              text="Preparamos cada producto para aportar energía, salud y equilibrio, ayudándote a mantener un estilo de vida más consciente y vital."
+              type="type1"
+              icon="/icon2.png"
+            />
+            <Card
+              title="Sabor y nutrición sin compromisos"
+              text="Combinamos lo mejor de la naturaleza con recetas deliciosas, logrando alimentos saludables que realmente disfrutas cada día."
+              type="type1"
+              icon="/icon3.png"
+            />
           </div>
         </div>
       </div>
