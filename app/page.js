@@ -1,5 +1,6 @@
 import Banner from "./components/Banner";
 import InfoBanner from "./components/InfoBanner";
+import Testimonials from "./components/Testimonials";
 import "./home/style.css";
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
       <main className="">
         <Banner />
         <InfoBanner />
+        <Testimonials />
       </main>
     </div>
   );
